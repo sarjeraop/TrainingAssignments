@@ -1,0 +1,8 @@
+<aura:component  controller="AuraControllerCalc" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="FResult" type="integer"/>  
+    <aura:handler event="c:FinalResultEvent" action="{!c.showFinalResult}"/>
+    <lightning:card>
+        <ui:outputText value="{!v.FResult}" /><br/>
+    </lightning:card>
+</aura:component>
