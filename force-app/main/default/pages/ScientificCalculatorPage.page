@@ -1,0 +1,49 @@
+<apex:page controller="scientificCalculatorController">
+    
+    
+    <apex:form id="formId">
+        <apex:outputPanel id="resultPanel">
+            
+            <br/>
+            <center>
+                <apex:outputLabel id="resultArea" value="{!val}" style="font-size:50px;"></apex:outputLabel>
+            </center>
+            
+        </apex:outputPanel>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:outputText >
+                    
+                </apex:outputText>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="4">
+                <apex:commandButton value="7" action="{!button7Clicked}" /> <!--reRender="resultPanel"/> -->
+                <apex:commandButton value="8" action="{!button8Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="9" action="{!button9Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="/" action="{!divide}" reRender="resultPanel"/> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="4">
+                <apex:commandButton value="4" action="{!button4Clicked}" reRender="resultPanel"/> 
+                <apex:commandButton value="5" action="{!button5Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="6" action="{!button6Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="*" action="{!multiply}" reRender="resultPanel"/> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="4">
+                <apex:commandButton value="1" action="{!button1Clicked}" reRender="resultPanel"/> 
+                <apex:commandButton value="2" action="{!button2Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="3" action="{!button3Clicked}" reRender="resultPanel"/>
+                <apex:commandButton value="-" action="{!subtract}" reRender="resultPanel"/> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="4">
+                <apex:commandButton value="0" action="{!button0Clicked}" reRender="resultPanel"/> 
+                <!-- <apex:commandButton value="." action="{!button.Clicked}" reRender="resultPanel"/> -->
+                <apex:commandButton value="+" action="{!add}" reRender="resultPanel"/>
+                <apex:commandButton value="=" action="{!result}" reRender="resultPanel"/> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+
+</apex:page>
