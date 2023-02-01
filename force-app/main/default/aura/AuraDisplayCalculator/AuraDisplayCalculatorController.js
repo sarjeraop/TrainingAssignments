@@ -1,4 +1,12 @@
 ({
+  /**	@methodname	:	ShowValue
+    *	@author	:	Sarjerao
+    *	@group	:	none
+    *	@param	:	none
+    *	@description	:	this is method for get value from event and check 
+    *	@return	:	none
+  */
+
     showValue : function(cmp, event) {
         var message = event.getParam("message");
         console.log('message$$'+message);
@@ -65,6 +73,8 @@
                     "operator":cmp.get("v.operator"),  
                     "num2":cmp.get("v.numberTwo")
                 });
+
+                
                 action.setCallback(this, function(a){
                     var state = a.getState(); // get the response state
                     if(state == 'SUCCESS') {
