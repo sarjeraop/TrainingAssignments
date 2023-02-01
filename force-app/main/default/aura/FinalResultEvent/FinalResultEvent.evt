@@ -1,3 +1,0 @@
-<aura:event type="APPLICATION" >
-   <aura:attribute name="FinalResult" type="String"/>
-</aura:event>
