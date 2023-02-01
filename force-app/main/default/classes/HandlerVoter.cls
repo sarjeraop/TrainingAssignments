@@ -1,4 +1,23 @@
+/*
+* @classname      HandlerVoter
+* @author         Sarjerao
+* @date           22-01-2023
+* @description    This is a TriggerHandler Apex Class of TriggerOncontact trigger uesd for send mail To family
+                  Head when new voter is added
+* 
+* @modificationlog
+* 2.Sarjerao        01-02-2023  Add Code Comments
+*/
 public  class HandlerVoter {
+
+/*
+* @methodname         sendEmail
+* @author             Sarjerao 
+* @group              none
+* @param              none
+* @description        This method is used for send email to family head.
+* @return             Void
+*/
     public static void sendEmail(List<Contact>con){
         Set<Id> FamilyHeadId = New Set<Id>();
         List<Messaging.SingleEmailMessage> mails =new List<Messaging.SingleEmailMessage>();
