@@ -1,6 +1,19 @@
+/**	@ClassName	:	 VoterTriggerHandlerFlow
+  *	@author	:	Sarjerao
+  *	@date	:	1-Feb-2023
+  *	@description	:	This Apex Class Is for trigger Handler of TriggeronContact Trigger
+  *	@modificationlog
+  *	1.Sarjerao    1-Feb-2023    Add code Cooments
+*/
 public class VoterTriggerHandlerFlow {
     
-    //Flow of Contact written in trigger(Before Insert)
+    
+/* * @methodname         checkBoxChecked
+   * @author             Sarjerao 
+   * @group              none
+   * @param              none
+   * @description        This method is used for When we insert a FamilyHead.
+   * @return             Void */
     public Static void checkBoxChecked(List<Contact> con ){
         List<Account> accList = new List<Account>();
         List<String> accountName = new List<String>();
@@ -43,7 +56,14 @@ public class VoterTriggerHandlerFlow {
         Update updatedConlList;
     }
     
-    //checkbox unchecked method    
+      
+
+/* * @methodname         checkBoxChecked
+   * @author             Sarjerao 
+   * @group              none
+   * @param              none
+   * @description        This method is used for When we insert a FamilyMember.
+   * @return             Void */
     public Static void checkBoxNotChecked(List<Contact> con1 ){
         //if any family member is inserting then  populate the family Name on it   //&& c.family_heads__c != Null
         List<Contact> updateCon =([Select Id, Name,	AccountId, is_family_head__c from Contact where Id =:con1]);
@@ -56,12 +76,6 @@ public class VoterTriggerHandlerFlow {
             }  
             updateCon.add(ct);
         }
-       // Update updateCon;
-        // update updateCon;
-        /*   for(Contact c1 : updateCon){
-c1.is_family_head__c = False;
-updateCon.add(c1);
-}
-Update updateCon; */
+       
     }
 }
