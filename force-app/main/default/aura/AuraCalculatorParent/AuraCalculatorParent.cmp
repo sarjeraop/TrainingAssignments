@@ -1,0 +1,16 @@
+/* * @Componentname      AuraCalculatorParent
+   * @author             Sarjerao
+   * @date               22-01-2023
+   * @description        This is a Parent AuraComponent of  AuraCalculator And AuraDisplayCalculator
+   * 
+   * @modificationlog
+   * 1.Sarjerao   01-02-2023  Add Code Comments */
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <div class="slds-box" style="display: inline-block">
+        <lightning:card>
+            
+            <c:AuraDisplayCalculator />
+        </lightning:card> 
+    </div>
+    
+</aura:component>
