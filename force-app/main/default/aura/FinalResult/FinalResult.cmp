@@ -1,3 +1,10 @@
+<!--*@ComponentName	:	FinalResult 
+    *@author	:	Sarjerao
+    *@date	:	1-feb-2023
+    *@description	:	this is a aura cmp for pass the final result value to the another aura cmp
+    *@modificationlog
+    *1.Sarjerao  1-feb-2023      Add code comments-->
+
 <aura:component  controller="AuraControllerCalc" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
     
     <aura:attribute name="FResult" type="integer"/>  
