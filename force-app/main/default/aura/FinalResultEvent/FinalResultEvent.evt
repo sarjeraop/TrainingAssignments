@@ -1,10 +1,12 @@
-<!-- *@AuraEventName	:	 FinalResultValue
-     *@author	:	Sarjerao
-     *@date	:	1-Feb-2023
-     *@description	:	This Aura Event Is for Pass The Final result Of calculator to the other aura cmp
-     *@modificationlog
-     *1.Sarjerao    1-Feb-2023    Add code Cooments-->
+<!-- 
+ *@AuraEventName	          :	FinalResultValue
+ *@author	                  :	Sarjerao Pujari
+ *@date	                    :	22-Dec-2022
+ *@description	            :	This Aura Event Is for Pass The Final result Of calculator to the other aura cmp
 
+ *@modificationlog
+ *1.Sarjerao Pujari        01-Feb-2023        Add code Cooments
+-->
 <aura:event type="APPLICATION" >
-   <aura:attribute name="FinalResult" type="String"/>
+  <aura:attribute name="FinalResult" type="String"/>
 </aura:event>
