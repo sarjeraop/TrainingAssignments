@@ -1,10 +1,13 @@
-<!--*	@EventName	:	ButtonValueDisplay
-    *	@author	:	Sarjerao
-    *	@date	:	1-feb-2023
-    *	@description	:	this is a Aura Cmp event to pass button value to the veriable 
-    *	@modificationlog
-    *	1.Sarjerao      1-fed-2023      Add code comments -->
+<!--
+*@EventName           : ButtonValueDisplay
+*@author              : Sarjerao Pujari
+*@date                : 20-Dec-2022
+*@description         : This is a Aura Cmp event to pass button value to the veriable 
+
+*@modificationlog
+*1.Sarjerao Pujari      1-fed-2023      Add code comments
+-->
 
 <aura:event type="component">
-    <aura:attribute name="message" type="String"/>
+  <aura:attribute name="message" type="String"/>
 </aura:event>
